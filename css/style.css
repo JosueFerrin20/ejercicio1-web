@@ -17,10 +17,13 @@ img {
     border-style: dashed;
     
 }
-.img-rounded{
+.img-rounded {
     border-radius: 30px;
     border-style: double;
 }
-.color-text{
+.color-text {
     color: cadetblue;
+}
+.background-color-special {
+    background-color: burlywood;
 }
