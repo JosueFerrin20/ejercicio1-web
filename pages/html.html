@@ -3,22 +3,47 @@
     <head>
         <title>Contenido HTML</title>
     </head>
-    <body>
+    <body onload="logAccess('html')">
+        <div>
+            <a href="../home.html">Inicio</a> 
+            <a href="#">Html</a>
+            <a href="../pages/css.html">CSS</a>
+            <a href="../pages/javascript.html">Javascript</a>
+        </div>
+
         <span> <a href="../home.html">Inicio</a></span>
         <h1>HTML</h1>
+        <div>
+            <a href="#txtHipervinculo">Hiperv&iacute;nculo</a>|
+            <a href="#txtVideo">Video</a>|
+            <a href="#txtImagen">Imagen</a>|
+            <a href="#txtAtributoId">Atributo ID</a>            
+        </div>
         <p>Es un enguaje de marcado Hipertexto</p>
         <p>Utiliza etiquetas para la estructura de la pagina web</p>
         <hr>
-        <h2>Hipervínculo</h2>
+        <h2 id="txtHipervinculo">Hipervínculo</h2>
         <p>Es una etiqueta que sirve para navegar a otra pagina interna o externa</p>
         <p>El Nombre de la etiqueta es <strong>a</strong> y utilizar el atributo <b>href</b> para definir el vinculo al que se quiere acceder </p>
         <code>
             &lt;a href="page.html"&gt;;Pagina&lt;/a&gt;
         </code>
         <hr>
-        <h2>Símbolos especiales</h2>
+        <h2 id="txtVideo">Video</h2>
+        <div>
+            <video width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">
+            </video>
+            <hr>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IxgtaqnpSJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
         <hr>
-        <h2>Imagen</h2>
-        <p>Ejemplo de imagen que esta en la carpeta <b>Images</b> </p>
-        <img src="../Images/Frontend.jpg" alt="">
+        <h2 id="txtAtributoId">El atributo ID</h2>
+        <p>El atributo global <b>id</b> define un identificador &uacute;nico (ID), para una etiqueta, el cual no debe repetirse en todo el documento HTML.</p>
+		<p>Su prop&oacute;sito es identificar el elemento, al vincularlo, en scripts u hojas de estilo (con CSS)</p>
+		<p>El valor de este atributo es una cadena de caracteres y no debe contener espacios en blanco.</p>
+        <footer>
+            <script src="../js/script-util.js"></script>
+        </footer>
     </body>
