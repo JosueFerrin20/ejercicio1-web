@@ -27,3 +27,8 @@ img {
 .background-color-special {
     background-color: burlywood;
 }
+.btn {
+    width: 150px;
+    background-color: darkblue;
+    color: whitesmoke;
+}
